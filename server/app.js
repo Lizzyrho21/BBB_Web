@@ -4,7 +4,7 @@ const cors = require('cors');
 const axios = require('axios');
 require('dotenv').config();
 
-const PORT = process.env.PORT = 3001;
+const PORT = process.env.PORT;
 app.use(cors());
 
 app.get('/', (req, res) => {
@@ -12,5 +12,5 @@ app.get('/', (req, res) => {
 })
 
 app.listen(PORT, () => {
-  console.log(`Example app listening on port ${PORT}`)
+  console.log(`Example app listening on port ${PORT}`)  
 })
